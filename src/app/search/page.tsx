@@ -50,8 +50,18 @@ export default async function Page(props: Props) {
 
 	return (
 		<div>
+			<div>
+				<a
+					className="text-blue-500 underline"
+					href="https://github.com/zakiego/seach-params-playground"
+				>
+					Source code
+				</a>
+			</div>
+
+			<div className="mb-2">Query: {query}</div>
+
 			<SearchInput />
-			<div>Query: {query}</div>
 
 			<div className="grid grid-cols-2 gap-4">
 				{data.products.map((product) => (
