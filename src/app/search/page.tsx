@@ -32,9 +32,6 @@ const getData = async (query: string | undefined) => {
 
 	const response = await fetch(
 		`https://dummyjson.com/products/search?q=${query}&limit=10`,
-		{
-			cache: "force-cache",
-		},
 	);
 
 	const data = await response.json();
