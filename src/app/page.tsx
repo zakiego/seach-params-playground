@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 export default function Page() {
-	redirect("/search");
+  redirect("/search");
 
-	return <main />;
+  return <main />;
 }
